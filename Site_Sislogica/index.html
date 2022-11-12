@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link   scrollto" href="#modulos">Módulos</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -456,52 +456,80 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <section id="modulos">
-
-        <div class="section-title">
-          <h2>Módulos</h2>
-          <p>O SISEDI é a nossa ferramenta de MiddleWare, servindo para realizar integração e troca de informações de modo inteligente e eficiente com nossos clientes  e parceiros, utilizando-se de todas as tecnologias disponíveis ou conhecidas como por API, Web Service, FTP, SFTP e outros.</p>
+      <section id="modulos" class="team section-bg">
+        <div class="row">
+          <div class="section-title">
+            <h2>Módulos</h2>
+            <p>Funcionalidades que fazem a diferença e facilitam a Gestão e o Controle de Entregas do seu negócio!</p>
+          </div>
+    
+          <div class="row">
+            <main class="cardsmodulos">
+              <section class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="icon">
+                  <img src="assets/img/imagens/rota.png" alt="">
+                </div>              
+                <h4>Roteirizador</h4>
+                <p>Roteirizar ordem das entregas</p>
+                <button type="button" onclick="saibaMais('roteiriza','conteudoRoteirizacao')" id="roteiriza">Saiba Mais!</button>
+                <div id="conteudoRoteirizacao" hidden>
+                  <ul>
+                    <li>Acompanhamento das entregas por mapa</li>
+                    <li>Acompanhamento de performance de cargas</li>
+                    <li>Acompanhamento de tempo e km rodado pelo motorista</li>
+                  </ul>
+                  <div>
+                    <button type="button">Exibir Imagens do Sistema!</button>
+                    <button type="button" class="verMenos" onclick="lerMenos('conteudoRoteirizacao','roteiriza')" id="roteiriza">Mostrar menos!</button>
+                  </div>
+                  
+                </div>
+              </section>
+      
+              <section class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="icon">
+                  <img src="assets/img/imagens/monetizacao.png"  alt="">
+                </div>  
+                <h4>Monetização</h4>
+                <p>Pagamento de motoristas.</p>
+                <button type="button" onclick="saibaMais('monetiza','conteudoMonetizacao')" id="monetiza">Saiba Mais!</button>
+                <div  id="conteudoMonetizacao" hidden>
+                  <ul>
+                    <li>Acompanhamento das entregas por mapa</li>
+                    <li>Acompanhamento de dvsdvsd de cargas</li>
+                    <li>Acompanhamento de tempo e km rodado pelo motorista</li>
+                  </ul>
+                  <button type="button">Exibir Imagens do Sistema!</button>
+                  <button type="button" class="verMenos" onclick="lerMenos('conteudoMonetizacao','monetiza')" id="monetiza">Mostrar menos!</button>
+                </div>
+                
+              </section>
+    
+              <section class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="icon">
+                  <img src="assets/img/imagens/fiscal.png" alt="">
+                </div>              
+                <h4>Fiscal</h4>
+                <p>Emissão de NFe CT-e e MDF-e</p>
+                <button type="button" onclick="saibaMais('fiscaliza','conteudoFiscalizacao')" id="fiscaliza">Saiba Mais!</button>
+                <div class="conteudoFiscalizacao" id="conteudoFiscalizacao" hidden>
+                  <ul>
+                    <li>kjnkjnnknna</li>
+                    <li>Acompanhamento de performance de cargas</li>
+                    <li>Acompanhamento de tempo e km rodado pelo motorista</li>
+                  </ul>
+                  <button type="button">Exibir Imagens do Sistema!</button>
+                  <button type="button" class="verMenos" onclick="lerMenos('conteudoFiscalizacao','fiscaliza')" id="fiscaliza">Mostrar menos!</button>
+                </div>
+              </section>
+            </main>
+          </div>
+          
         </div>
-  
-        <main class="cardsmodulos">
-          <section class="card">
-            <div class="icon">
-              <img src="assets/img/roteirizador.png" alt="">
-            </div>              
-            <h4>Roteirizador</h4>
-            <p>Aplicativo para realizar baixas das Entregas</p>
-            <button>Saiba Mais!</button>
-          </section>
-  
-          <section class="card">
-            <div class="icon">
-              <img src="assets/img/roteirizador.png"  alt="">
-            </div>  
-            <h4>Aplicativo</h4>
-            <p>Aplicativo para realizar baixas das Entregas</p>
-            <button>Saiba Mais!</button>
-          </section>
-          <section class="card">
-            <div class="icon">
-              <img src="assets/img/roteirizador.png" alt="">
-            </div>              
-            <h4>Aplicativo</h4>
-            <p>Aplicativo para realizar baixas de Entregas</p>
-            <button>Saiba Mais!</button>
-          </section>
-  
-          <section class="card">
-            <div class="icon">
-              <img src="assets/img/roteirizador.png"  alt="">
-            </div>  
-            <h4>Aplicativo</h4>
-            <p>Aplicativo para realizar baixas de Entregas</p>
-            <button>Saiba Mais!</button>
-          </section>
-        </main>
-      </section>
-    </section><!-- End Team Section -->
+        
+
+        
+      </section><!-- End Team Section -->
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
@@ -785,6 +813,7 @@
     </div>
   </footer><!-- End Footer -->
 
+  
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -797,8 +826,26 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+
+      function saibaMais(esconde, aparece){
+				var obj=document.getElementById(esconde).hidden=true;
+        var div=document.getElementById(aparece).hidden=false;
+
+			}
+
+      function lerMenos(esconde, aparece){
+				var obj=document.getElementById(esconde).hidden=true;
+        var div=document.getElementById(aparece).hidden=false;
+
+			}
+
+    
+  </script>
 
 </body>
 
